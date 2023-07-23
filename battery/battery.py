@@ -1,7 +1,7 @@
-from abc import abstractmethod
+from abc import ABC, abstractmethod
 
 
-class Battery:
+class Battery(ABC):
 
     @abstractmethod
     def needs_service(self):
